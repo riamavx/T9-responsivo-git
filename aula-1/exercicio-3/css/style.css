@@ -1,13 +1,13 @@
 /* Header */
 header {
     margin-top: 0px;
-    color: white;
+    color: #FFEB3B;
     font-size: 20px;
     font-family: 'Courier New', ourier, monospace;
     background: url(../img/gato-background.jpg);
     background-size: cover;
     background-position: center;
-    height: 180px;  
+    min-height: 180px;  
     align-items: center;  
 }
 header div {
@@ -32,4 +32,25 @@ main {
     width: 250px;
     height: 150px;   
 }
+main .todos:last-child{
+    margin-top: 20px;
+}
+
+.header-caixa{
+    align-items: center;
+    display: flex;
+    
+}
 /*  */
+@media screen and (max-width:768px){
+    .header-caixa {
+        flex-direction: column;
+    }
+     .todos{
+         flex-wrap: wrap;
+     }   
+    }
+    .todos:last-child{
+        margin-top: 0;
+    }
+
