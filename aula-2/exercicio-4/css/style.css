@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -10,7 +11,7 @@ body {
 
 /* FORM */
 .form {
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -76,4 +77,18 @@ body {
 
 .btn_purple:hover {
     background-color: #3a006d;
+}
+
+
+@media screen and (max-width:500px){
+    .form > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+label{
+    text-align: center;
 }
